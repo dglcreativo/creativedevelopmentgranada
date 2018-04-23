@@ -1,0 +1,188 @@
+.boxext, .boxext-reg {
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    display: none;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+.boxint, .boxint-reg {
+    background: #fff;
+    border-radius: 7px;
+    margin: 50px auto 0;
+    position: relative;
+    width: 50%;
+}
+.boxcenter {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+}
+.boxcenter h2 {
+    color: #ff9004;
+    font-weight: 300;
+    font-size: 25px;
+    margin: 30px 0;
+    width: 100%;
+}
+.boxcenter p {
+    margin-bottom: 20px;
+}
+.cerrar {
+    position: absolute;
+    right: 16px;
+    top: 13px;
+    cursor: pointer;
+}
+
+/* Contenido de las cajas */
+
+.contain-img{
+    max-width: 1024px;
+    margin: 30px auto;
+}
+.contain-img img{
+
+}
+.form {
+    width: 100%; 
+    margin:0 auto; 
+    padding-bottom: 30px; 
+    text-align: center;
+}
+.col, .colreg{ 
+    display: inline-block; 
+    width: 70%; 
+    margin-bottom: 25px; 
+    padding: 0 20px; 
+    vertical-align: top; 
+    text-align: left;
+}
+.colreg{
+    width: 45%;
+    padding: 0;
+}
+.file {
+    background: #ffbd04 url(../images/ico-file.png) no-repeat center center; 
+    height: 260px;
+    border: 2px solid #ffbd04;
+    border-radius: 3px;
+    position: relative;
+}
+.file-profile {
+    background: #ff9004 url(../images/ico-file.png) no-repeat center center; 
+    height: 260px;
+    border: 2px solid #ff9004;
+    border-radius: 3px;
+    position: relative;
+}
+.file img, .file-profile img{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.file > a, .file-profile > a{
+    position: absolute;
+    right: 16px;
+    top: 13px;
+    color: #ffbd04;
+    cursor: pointer;
+}
+.form label { 
+    display: block; 
+    margin-bottom: 5px; 
+    color:#333; 
+    font-size: 13px; 
+    text-transform: uppercase; 
+}
+.form input[type="email"], .form input[type="text"], .form input[type="password"]{ 
+    display: inline-block;
+    width: 100%;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,.8);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #ffbd04;
+    font-size: 14px;
+    font-weight: 400;
+}
+.form input[type="email"]:focus, .form input[type="text"]:focus, .form input[type="password"]:focus{    
+    outline: none;	
+}
+.form input[type="file"] {
+    width: 100%; 
+    height: 100%; 
+    opacity: 0; 
+    cursor: pointer;
+}
+.form .tooltip { 
+    display: inline-block; 
+    background: #333; 
+    color: #fff; 
+    border-radius: 50%; 
+    width: 15px; 
+    line-height: 15px; 
+    text-align: center; 
+    vertical-align: middle;
+}
+/*radiobuttons*/
+.form .radio{
+    margin-bottom: 15px;
+    text-align: right;
+    padding: 0 35px;
+}
+.form .radio input[type="radio"]{
+    display: none;
+}
+.form .radio label{
+    display: inline-block;
+    color: #333333;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid #ffbd04;
+    padding: 5px 15px 5px 44px;
+    position: relative;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    cursor: pointer;
+
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.form .radio label:hover{
+    background: #ff9004;
+    color: #ffffff;
+    border: 1px solid #ff9004;
+}
+.form .radio label:before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 2px solid #333333;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 8px;
+}
+.form .radio input[type="radio"]:checked +label{
+    padding: 5px 15px;
+    background: #ff9004;
+    color: #ffffff;
+    border: 1px solid #ff9004;
+}
+.form .radio input[type="radio"]:checked +label:before{
+    display: none;
+}
+.form .radio input[type="radio"]:disabled +label{
+    background: #cccccc;
+    color: #777777;
+    border: 1px solid #777777;
+    opacity: 0.2;
+}

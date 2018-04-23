@@ -1,0 +1,437 @@
+.dashboard{
+    text-align: left;
+    background: rgba(255,189,4,0.1) url(../images/dashboard_bg.png) no-repeat;
+}
+.dashboard header{
+    position: relative;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    height: 60px;
+    width: 100%;
+    padding: 0 30px;
+    background: #eee url(../images/main.jpg) center top no-repeat;
+    background-size: cover;
+    z-index: 3;
+    border-bottom: 2px solid grey;
+}
+.dashboard header h4{
+    font-family: 'Raleway-Light', sans-serif;
+    font-size: 2rem;
+}
+.dashboard header a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+.dashboard  header h1 img{
+    float: left;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 25px;
+}
+.dashboard .drch{
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    margin-right: 30px;
+}
+.dashboard .drch a{
+    display: inline-block;
+    color: #fff;
+}
+
+.img-avatar-dash{
+    position: absolute;
+    top: 57px;
+    right: 40px;
+    width: 150px;
+    height: 150px;
+}
+.tabs__links, .dashboard .content-navbars-register{
+    width: 90%;
+    margin: auto;
+}
+
+.tabs__links{
+    display: table; /*asi limpiamos el float de las etiquetas a*/
+    position: relative;
+    margin-top: 20px;
+    top: 1px;
+}
+.tabs__links a{
+    display: block;
+    float: left;
+    line-height: 3;
+    background: #ff9004;
+    padding: 0 16px;
+    text-decoration: none;
+    margin-right: 5px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #bbb;
+    color: #ffffff;
+    border-bottom-color: transparent;
+    position: relative;
+}
+.tabs__links .active{
+    z-index: 100;
+    background: rgba(255,255,255,1);
+    color: #ff9004;
+}
+.dashboard .content-navbars-register{
+    position: relative;
+}
+.panel{
+    background: rgba(255,255,255,1);
+    padding: 16px;
+    border: 1px solid #ccc;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.panel.active{
+    display: block;
+}
+
+.dashboard .content-navbars-register h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.colreg-admin{ 
+    display: inline-block; 
+    width: 28%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 25px;                     
+    vertical-align: top; 
+}
+.colreg-admin-input{
+    display: inline-block;
+    width: 70%;
+    float: left;
+    margin-bottom: 25px;
+    vertical-align: top;
+}
+.colreg-user{
+    display: inline-block;
+    width: 31%;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 25px;
+    vertical-align: top;
+}
+.colreg-user-input{
+    display: inline-block;
+    width: 31%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 25px;
+    vertical-align: top;
+}
+.column1,
+.column2,
+.column3 {
+    width: 31%;
+    margin: 0 2%;
+    padding: 15px 0;
+}
+
+.form-insert input[type="text"], 
+.form-insert input[type="password"],
+.form-insert input[type="email"]{
+    font-family: "Raleaway-Regular", sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid #ff9004;
+    color: #333333;
+    background: rgba(51, 51, 51, 0);
+    outline: none;
+}
+.form-insert input[type="file"] {
+    width: 100%; 
+    height: 100%; 
+    opacity: 0; 
+    cursor: pointer;
+}
+
+.form-insert select{
+    width: 60%;
+    margin:  0 20%;
+    padding: 10px 15px !important;
+    text-align: center;
+    color: #333333;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    outline: none;
+}
+.radio{
+    margin-bottom: 15px;
+    margin-left:50px;
+    text-align: left;
+}
+.form-insert .radio input[type="radio"]{
+    display: none;
+}
+.form-insert .radio label{
+    display: inline-block;
+    color: #333333;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid #ffbd04;
+    padding: 5px 15px 5px 44px;
+    position: relative;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    cursor: pointer;
+
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.form-insert .radio label:hover{
+    background: #ff9004;
+    color: #ffffff;
+    border: 1px solid #ff9004;
+}
+.form-insert .radio label:before{
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 2px solid #333333;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 8px;
+}
+.form-insert .radio input[type="radio"]:checked +label{
+    padding: 5px 15px;
+    background: #ff9004;
+    color: #ffffff;
+    border: 1px solid #ff9004;
+}
+.form-insert .radio input[type="radio"]:checked +label:before{
+    display: none;
+}
+.ediPanel{
+    margin-top: 25px;
+}
+.ediPanel aside{
+    border-bottom: 1px solid #ff9004;
+    margin-bottom: 15px;
+}
+.ediPanel aside p{
+    margin-left: 20px;
+}
+.ediPanel aside form{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 15px 0;
+}
+.ediPanel aside form > label{
+    margin-left: 20px;
+}
+.ediPanel aside form input[type="radio"]{
+    display: none;
+}.ediPanel aside form input[type="radio"]:checked +label.color1{
+    padding: 5px 15px;
+    background: #ffbd04;
+    color: #ffffff;
+    border: 1px solid #ffbd04;
+}
+.ediPanel aside form input[type="radio"]:checked +label.color2{
+    padding: 5px 15px;
+    background: #ff9004;
+    color: #ffffff;
+    border: 1px solid #ff9004;
+}
+.ediPanel aside form input[type="radio"]:checked +label.color3{
+    padding: 5px 15px;
+    background: #c08094;
+    color: #ffffff;
+    border: 1px solid #c08094;
+}
+.ediPanel aside form input[type="radio"]:checked +label.color4{
+    padding: 5px 15px;
+    background: #ffffff;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+.ediPanel aside form > label.color1{
+    display: inline-block;
+    color: #333333;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid #ffbd04;
+    padding: 15px 15px 15px 15px;
+    position: relative;
+    font-size: 0.8rem;
+    border-radius: 50%;;
+    cursor: pointer;
+
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.ediPanel aside form > label.color1:hover{
+
+    background: #ffbd04;
+    padding: 15px 15px 15px 50px;
+    border-radius: 3px;
+    border: 2px solid #ffbd04;
+}
+.ediPanel aside form > label.color2{
+    display: inline-block;
+    color: #333333;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid #ff9004;
+    padding: 15px 15px 15px 15px;
+    position: relative;
+    font-size: 0.8rem;
+    border-radius: 50%;;
+    cursor: pointer;
+
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.ediPanel aside form > label.color2:hover{
+
+    background: #ff9004;
+    padding: 15px 15px 15px 50px;
+    border-radius: 3px;
+    border: 2px solid #ff9004;
+}
+.ediPanel aside form > label.color3{
+    display: inline-block;
+    color: #333333;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid #c08094;
+    padding: 15px 15px 15px 15px;
+    position: relative;
+    font-size: 0.8rem;
+    border-radius: 50%;;
+    cursor: pointer;
+
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.ediPanel aside form > label.color3:hover{
+
+    background: #c08094;
+    padding: 15px 15px 15px 50px;
+    border-radius: 3px;
+    border: 2px solid #c08094;
+}
+.ediPanel aside form > label.color4{
+    display: inline-block;
+    color: #333333;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid #ffffff;
+    padding: 15px 15px 15px 15px;
+    position: relative;
+    font-size: 0.8rem;
+    border-radius: 50%;;
+    cursor: pointer;
+
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.ediPanel aside form > label.color4:hover{
+
+    background: #ffffff;
+    padding: 15px 15px 15px 50px;
+    border-radius: 3px;
+    border: 2px solid #ffffff;
+}
+
+.color1, .color2, .color3, .color4{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.color1{background: #ffbd04;}
+.color2{background: #ff9004;}
+.color3{background: #c08094;}
+.color4{background: #ffffff;}
+
+.choose-course{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ff9004;
+}
+.choose-course h2{
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.form-message textarea, .form-message input[type='text']{
+    display: inline-block;
+    width: 100%;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,.8);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #ffbd04;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+}
+.form-message textarea{
+    min-height: 200px;
+}
+
+/***Listar mensajes******/
+
+.tabla-mensaje{
+    width: 100%;
+    border-bottom: 1px solid #037e8c;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.uno, .dos{
+    border-bottom: 1px solid #ff9004;
+}
+.uno{
+    width: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.dos{
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+.tres{
+    width: 100%;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+    text-align: justify;
+    background: rgba(255,255,255,0.8);
+}
+.cuatro{
+    width: 100%;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
